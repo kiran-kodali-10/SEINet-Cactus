@@ -3,8 +3,9 @@ import keplerGlReducer from "kepler.gl/reducers";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { taskMiddleware } from "react-palm/tasks";
 import { Provider } from "react-redux";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Map from "./views/kepler-maps/Map";
+import Admin from "./layout/Admin";
 
 
 const reducers = combineReducers({
@@ -19,7 +20,7 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           {/* <Route exact path="/" component={Login} /> */}
-          <Route exact path="/map" render={(props) => <Admin {...props} />} />
+          <Route exact path="/" render={(props) => <Admin {...props} />} />
         </Switch>
         {/* <Map /> */}
       </BrowserRouter>
