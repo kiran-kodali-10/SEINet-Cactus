@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import keplerGlReducer from "kepler.gl/reducers";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { taskMiddleware } from "react-palm/tasks";
@@ -14,20 +14,22 @@ const reducers = combineReducers({
 
 const store = createStore(reducers, {}, applyMiddleware(taskMiddleware));
 
+
 export default function App() {
+  useEffect(()=>{
+    console.log("insider app.js")
+  })
   return (
     <Provider store={store}>
-      <HashRouter>
+      {/* <HashRouter> */}
         <BrowserRouter>
-        
         <Switch>
-          {/* <Route exact path="/" component={Login} /> */}
-          <Route exact path="/map" render={(props) => <Admin {...props} />} />
-          <Route exact path="/" render={(props) => <Admin {...props} />} />
+          <Route exact path="/SEINet-Cactus/map" render={(props) => <Admin {...props} />} />
+          <Route exact path="/SEINet-Cactus/wordart" render={(props) => <Admin {...props} />} />
+          <Route exact path="/SEINet-Cactus/species-data" render={(props) => <Admin {...props} />} />
         </Switch>
-        {/* <Map /> */}
         </BrowserRouter>
-      </HashRouter>
+      {/* </HashRouter> */}
     </Provider>
   );
 }

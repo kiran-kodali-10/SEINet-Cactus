@@ -49,7 +49,7 @@ export default function Map() {
         "interactionConfig": {
           "tooltip": {
             "fieldsToShow": {
-              "cactus": ["column_0", "eventDate", "decimalLatitude", "decimalLongitude"]
+              "cactus": ["eventDate"]
             }, "enabled": true
           }, "brush": { "size": 0.5, "enabled": false }, "coordinate": { "enabled": false }
         },

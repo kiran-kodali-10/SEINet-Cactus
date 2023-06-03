@@ -55,15 +55,15 @@ import React, { useEffect } from 'react'
 // }
 // export default ChallengeContainer
 
-export default function WordArt(props){
+export default function WordArts(props){
 
 	useEffect(()=>{
-		console.log("inside word cloud")
+		console.log("inside word cloud 2")
 	})
 
 	return (
 		<div>
-			<h1>Hello</h1>
+			<h1>Hello - 2</h1>
 		</div>
 	)
 }
