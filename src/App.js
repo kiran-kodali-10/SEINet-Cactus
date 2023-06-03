@@ -18,11 +18,15 @@ export default function App() {
   return (
     <Provider store={store}>
       <HashRouter>
+        <BrowserRouter>
+        
         <Switch>
           {/* <Route exact path="/" component={Login} /> */}
+          <Route exact path="/map" render={(props) => <Admin {...props} />} />
           <Route exact path="/" render={(props) => <Admin {...props} />} />
         </Switch>
         {/* <Map /> */}
+        </BrowserRouter>
       </HashRouter>
     </Provider>
   );
