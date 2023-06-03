@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/SEINet-Cactus/static/css/main.34de6062.chunk.css",
-    "main.js": "/SEINet-Cactus/static/js/main.1c1e56db.chunk.js",
-    "main.js.map": "/SEINet-Cactus/static/js/main.1c1e56db.chunk.js.map",
+    "main.js": "/SEINet-Cactus/static/js/main.92d4b452.chunk.js",
+    "main.js.map": "/SEINet-Cactus/static/js/main.92d4b452.chunk.js.map",
     "runtime-main.js": "/SEINet-Cactus/static/js/runtime-main.f1df7d63.js",
     "runtime-main.js.map": "/SEINet-Cactus/static/js/runtime-main.f1df7d63.js.map",
-    "static/js/2.368a7d1a.chunk.js": "/SEINet-Cactus/static/js/2.368a7d1a.chunk.js",
-    "static/js/2.368a7d1a.chunk.js.map": "/SEINet-Cactus/static/js/2.368a7d1a.chunk.js.map",
+    "static/js/2.ce9e0f1f.chunk.js": "/SEINet-Cactus/static/js/2.ce9e0f1f.chunk.js",
+    "static/js/2.ce9e0f1f.chunk.js.map": "/SEINet-Cactus/static/js/2.ce9e0f1f.chunk.js.map",
     "index.html": "/SEINet-Cactus/index.html",
-    "precache-manifest.f2f3c8b441ea65b706d224c93316e72a.js": "/SEINet-Cactus/precache-manifest.f2f3c8b441ea65b706d224c93316e72a.js",
+    "precache-manifest.ac7bbd09b3c51ee7ffe435dad08e83b8.js": "/SEINet-Cactus/precache-manifest.ac7bbd09b3c51ee7ffe435dad08e83b8.js",
     "service-worker.js": "/SEINet-Cactus/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/SEINet-Cactus/static/css/main.34de6062.chunk.css.map",
-    "static/js/2.368a7d1a.chunk.js.LICENSE.txt": "/SEINet-Cactus/static/js/2.368a7d1a.chunk.js.LICENSE.txt"
+    "static/js/2.ce9e0f1f.chunk.js.LICENSE.txt": "/SEINet-Cactus/static/js/2.ce9e0f1f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f1df7d63.js",
-    "static/js/2.368a7d1a.chunk.js",
+    "static/js/2.ce9e0f1f.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.1c1e56db.chunk.js"
+    "static/js/main.92d4b452.chunk.js"
   ]
 }
