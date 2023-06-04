@@ -1,6 +1,6 @@
 {
   "homepage": "https://kiran-kodali-10.github.io/SEINet-Cactus",
-  "name": "kepler-demo",
+  "name": "seinet-cactus",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,10 +9,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "d3": "^7.8.5",
     "kepler.gl": "^2.0.1",
+    "plotly.js": "^2.23.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-palm": "^3.1.2",
+    "react-plotly.js": "^2.6.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",

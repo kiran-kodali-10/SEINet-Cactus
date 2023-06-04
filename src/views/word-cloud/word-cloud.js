@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
-
+import WORDCLOUDDATA from '../../data/word-cloud-data.json'
+import ReactWordcloud from 'react-wordcloud'
+import { Grid } from '@material-ui/core'
+import "./word-cloud.css"
 // import WordCloudContainer from './WordCloudContainer'
 // import WordSentimentContainer from './WordSentimentContainer'
 
@@ -55,15 +58,27 @@ import React, { useEffect } from 'react'
 // }
 // export default ChallengeContainer
 
-export default function WordArt(props){
+export default function WordArt(props) {
 
-	useEffect(()=>{
-		console.log("inside word cloud")
-	})
+	useEffect(() => {
+		console.log(WORDCLOUDDATA.data)
+	}, [])
+
+	// const callbacks = {
+	// 	getWordColor: 
+	// }
 
 	return (
-		<div>
-			<h1>Hello</h1>
-		</div>
+		<Grid container alignItems='center' spacing={5} className='word-cloud-container'>
+			<Grid item
+				md={12}
+				sm={12}
+				xs={12}>
+					<ReactWordcloud 
+					words={WORDCLOUDDATA.data} 
+					// size={[900, 900]}
+					/>
+			</Grid>
+		</Grid>
 	)
 }

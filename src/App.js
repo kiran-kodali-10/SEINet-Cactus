@@ -3,10 +3,10 @@ import keplerGlReducer, { uiStateUpdaters } from "kepler.gl/reducers";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { taskMiddleware } from "react-palm/tasks";
 import { Provider } from "react-redux";
-import { BrowserRouter, Switch, Route, HashRouter } from 'react-router-dom';
-import Map from "./views/kepler-maps/Map";
+import { BrowserRouter, Switch, Route, HashRouter, Redirect } from 'react-router-dom';
 import Admin from "./layout/Admin";
 import NotFound from "./404_Error";
+import HomePage from "./views/HomePage/HomePage";
 
 const customizedKeplerGlReducer = keplerGlReducer
   .initialState({
@@ -57,16 +57,19 @@ export default function App() {
   })
   return (
     <Provider store={store}>
-      {/* <HashRouter> */}
+      <HashRouter>
         <BrowserRouter basename="/SEINet-Cactus">
         <Switch>
-          <Route exact path="/map" render={(props) => <Admin {...props} />} />
-          <Route exact path="/wordart" render={(props) => <Admin {...props} />} />
+          {/* <Route path='/' component={HomePage} /> */}
           <Route exact path="/species-data" render={(props) => <Admin {...props} />} />
+          <Route exact path="/wordart" render={(props) => <Admin {...props} />} />
+          <Route exact path="/map" render={(props) => <Admin {...props} />} />
+          <Route exact path="/parcat" render={(props) => <Admin {...props} />} />
+          <Redirect from="/" to="map" />
           <Route component={NotFound} />
         </Switch>
         </BrowserRouter>
-      {/* </HashRouter> */}
+      </HashRouter>
     </Provider>
   );
 }

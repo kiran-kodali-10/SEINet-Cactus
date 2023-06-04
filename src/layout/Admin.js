@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
-import { makeStyles } from '@material-ui/core';
+import React, { useEffect, useState } from 'react';
+import { Grid, makeStyles } from '@material-ui/core';
 import styles from '../assets/jss/adminStyles';
 import routes from '../routes'
 import { Route, Switch, Redirect } from 'react-router';
 import Navbar from '../components/Navbar/Navbar';
 // import { fetchStoreItems } from '../redux/storeItems'
 import { useDispatch, useSelector } from 'react-redux';
+import gifImage from '../assets/images/bubble-pop.gif'
 
 const useStyles = makeStyles(styles);
 
@@ -13,7 +14,7 @@ const switchRoutes = (
     <Switch>
         {
             routes.map((prop, key) => {
-                
+
                 return (
                     <Route
                         path={prop.path}
@@ -29,9 +30,13 @@ const switchRoutes = (
 export default function Admin(props) {
     const classes = useStyles();
 
-    useEffect(()=>{
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
         console.log(props);
-    })
+        setTimeout(() => {
+            setLoading(false);
+        },2000)
+    },[])
     // let notification = useSelector((state) => state.ui.notification);
     // const isAuthenticated = useSelector(state => state.login.isAuthenticated);
 
@@ -48,7 +53,14 @@ export default function Admin(props) {
                 <div className={classes.content}>
                     {
                         // isAuthenticated?
-                        switchRoutes
+                        loading ?
+                            <Grid container justifyContent='center' alignContent='center' style={{height: "80vh"}}>
+                                <Grid item>
+                                    <img src={gifImage} alt="Moving GIF" />
+                                </Grid>
+                            </Grid>
+                            :
+                            switchRoutes
                     }
                 </div>
             </div>
