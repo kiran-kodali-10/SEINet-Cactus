@@ -21,7 +21,7 @@ export default function SpeciesMap() {
                         "type": "point",
                         "config": {
                             "dataId": "species-data",
-                            "label": "decimal",
+                            "label": "Top 5 Species",
                             "color": [
                                 18,
                                 147,

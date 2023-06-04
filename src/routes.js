@@ -7,17 +7,17 @@ import WordArts from "./views/word-cloud/word-cloud2";
 
 const routes = [
     {
-        path: "/SEINet-Cactus/map",
+        path: "/map",
         name: "map",
         component: Map
     },
     {
-        path: "/SEINet-Cactus/wordart",
+        path: "/wordart",
         name: "word cloud",
         component:WordArt
     },
     {
-        path: "/SEINet-Cactus/species-data",
+        path: "/species-data",
         name: "Species Data",
         component: SpeciesMap
     }
