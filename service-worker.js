@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SEINet-Cactus/precache-manifest.2d68b23aaec3c2728e2bb2d99671ae92.js"
+  "/SEINet-Cactus/precache-manifest.d25b8ae4d0936414b7344aa75556c7df.js"
 );
 
 self.addEventListener('message', (event) => {
