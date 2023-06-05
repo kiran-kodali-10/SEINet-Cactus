@@ -1,0 +1,8 @@
+.image-container{
+    display: flex;
+    height: 400px;
+    width: 200px;
+}
+.image-analysis-container{
+    justify-content: center;
+}

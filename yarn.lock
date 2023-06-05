@@ -14282,6 +14282,11 @@
   "resolved" "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz"
   "version" "1.2.3"
 
+"wordcloud@^1.2.2":
+  "integrity" "sha512-fUnDsGrHXou+49j1OeKaC7nOeZPx+sWjIet0L/j6eAcm0nXy+a+AuUs/iDAX4PLBg1Zc6wgXWXhoXdQsXRWAEw=="
+  "resolved" "https://registry.npmjs.org/wordcloud/-/wordcloud-1.2.2.tgz"
+  "version" "1.2.2"
+
 "workbox-background-sync@^4.3.1":
   "integrity" "sha512-1uFkvU8JXi7L7fCHVBEEnc3asPpiAL33kO495UMcD5+arew9IbKW2rV5lpzhoWcm/qhGB89YfO4PmB/0hQwPRg=="
   "resolved" "https://registry.npmjs.org/workbox-background-sync/-/workbox-background-sync-4.3.1.tgz"

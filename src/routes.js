@@ -1,10 +1,10 @@
 // import elevatedMap from "./views/elevated-map/elevated-map";
+import ImageAnalysis from "./views/ImageAnalysis/ImageAnalyis";
 import MultiColorParallelCategories from "./views/Parcats/Parcats";
+import ScatterPlot from "./views/ScatterPlot/ScatterPlot";
 // import Parcats from "./views/Parcats/Parcats";
 import Map from "./views/kepler-maps/Map";
 import SpeciesMap from "./views/kepler-maps/elevation-map";
-import WordArt from "./views/word-cloud/word-cloud";
-import WordArts from "./views/word-cloud/word-cloud2";
 
 
 const routes = [
@@ -15,9 +15,9 @@ const routes = [
         component: Map
     },
     {
-        path: "/wordart",
-        name: "word cloud",
-        component:WordArt
+        path: "/image",
+        name: "image-analysis",
+        component:ImageAnalysis
     },
     {
         path: "/species-data",
@@ -28,6 +28,11 @@ const routes = [
         path: "/parcat",
         name: "parcat",
         component: MultiColorParallelCategories
+    },
+    {
+        path: "/scatter-plot",
+        name: "Scatter Plot",
+        component: ScatterPlot
     }
 
 ]

@@ -62,9 +62,10 @@ export default function App() {
         <Switch>
           {/* <Route path='/' component={HomePage} /> */}
           <Route exact path="/species-data" render={(props) => <Admin {...props} />} />
-          <Route exact path="/wordart" render={(props) => <Admin {...props} />} />
+          <Route exact path="/image" render={(props) => <Admin {...props} />} />
           <Route exact path="/map" render={(props) => <Admin {...props} />} />
           <Route exact path="/parcat" render={(props) => <Admin {...props} />} />
+          <Route exact path="/scatter-plot" render={(props) => <Admin {...props} />} />
           <Redirect from="/" to="map" />
           <Route component={NotFound} />
         </Switch>

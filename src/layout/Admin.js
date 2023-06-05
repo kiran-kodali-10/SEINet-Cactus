@@ -30,7 +30,7 @@ const switchRoutes = (
 export default function Admin(props) {
     const classes = useStyles();
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
         console.log(props);
         setTimeout(() => {
