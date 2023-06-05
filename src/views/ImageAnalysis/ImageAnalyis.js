@@ -25,7 +25,7 @@ export default function ImageAnalysis() {
             const formData = new FormData();
             formData.append('image', image)
             setLoader(true);
-            const data = fetch('http://18.191.205.35:5000/api/uploadImage', {
+            const data = fetch('http://3.129.57.154', {
                 method: 'POST',
                 body: formData,
                 mode: 'cors',
